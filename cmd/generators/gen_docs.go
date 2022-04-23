@@ -22,8 +22,10 @@ func main() {
 	r := cmd.RootCommand()
 
 	switch docType {
+	case "yaml":
+		cobra.CheckErr(doc.GenYamlTree(&r, "./yaml"))
 	case "reStructuredText":
-		doc.GenReSTTree(&r, "./rest")
+		cobra.CheckErr(doc.GenReSTTree(&r, "./rest"))
 	case "manpage":
 		header := &doc.GenManHeader{
 			Title:   "cobraslash",

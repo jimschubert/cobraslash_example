@@ -26,6 +26,7 @@ import "github.com/jimschubert/cobraslash_example/cmd"
 //go:generate go run ./cmd/generators/gen_docs.go markdown
 //go:generate go run ./cmd/generators/gen_docs.go manpage
 //go:generate go run ./cmd/generators/gen_docs.go reStructuredText
+//go:generate go run ./cmd/generators/gen_docs.go yaml
 func main() {
 	cmd.Execute()
 }

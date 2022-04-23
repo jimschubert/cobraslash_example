@@ -1,0 +1,10 @@
+name: cobraslash run/example
+synopsis: An example command with slash in the name
+usage: cobraslash run/example [flags]
+options:
+- name: help
+  shorthand: h
+  default_value: "false"
+  usage: help for run/example
+see_also:
+- cobraslash - root command

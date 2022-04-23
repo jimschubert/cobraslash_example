@@ -1,0 +1,13 @@
+name: cobraslash
+synopsis: root command
+options:
+- name: help
+  shorthand: h
+  default_value: "false"
+  usage: help for cobraslash
+- name: toggle
+  shorthand: t
+  default_value: "false"
+  usage: Help message for toggle
+see_also:
+- run/example - An example command with slash in the name
