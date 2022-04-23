@@ -4,10 +4,11 @@ package main
 
 import (
 	"fmt"
+	"os"
+
 	"github.com/jimschubert/cobraslash_example/cmd"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
-	"os"
 )
 
 func main() {
@@ -21,6 +22,8 @@ func main() {
 	r := cmd.RootCommand()
 
 	switch docType {
+	case "reStructuredText":
+		doc.GenReSTTree(&r, "./rest")
 	case "manpage":
 		header := &doc.GenManHeader{
 			Title:   "cobraslash",
