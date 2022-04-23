@@ -23,7 +23,8 @@ package main
 
 import "github.com/jimschubert/cobraslash_example/cmd"
 
-//go:generate go run ./cmd/generators/gen_docs.go
+//go:generate go run ./cmd/generators/gen_docs.go markdown
+//go:generate go run ./cmd/generators/gen_docs.go manpage
 func main() {
 	cmd.Execute()
 }

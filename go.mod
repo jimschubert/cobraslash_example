@@ -13,5 +13,5 @@ require (
 )
 
 // for local testing
-// replace github.com/spf13/cobra v1.4.0 => /Users/jim/golang/src/github.com/spf13/cobra
+replace github.com/spf13/cobra v1.4.0 => /Users/jim/golang/src/github.com/spf13/cobra
 
